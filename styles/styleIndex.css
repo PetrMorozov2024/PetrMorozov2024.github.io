@@ -1,0 +1,385 @@
+body{
+    background-color: #F4E9DC
+}
+
+
+h1{
+    font-size: 65px;
+    font-family: 'Old Standart';
+    font-weight: normal;
+}
+
+p{
+    font-family: 'Old Standart';
+    font-size: 25px;
+}
+
+p.bolderText{
+    font-weight: bolder;
+}
+
+.dropDownMenu{
+    position: relative;
+    display: inline-block;
+}
+
+.dropButton{
+    font-family: YACgEWqX9J4-0, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #304254;
+    background-color: #f4e9dc;
+    overflow: hidden;
+    border: none;
+    text-overflow: ellipsis;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.dropElements {
+    display: none;
+    position: absolute;
+    background-color: #e4dbcf;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropElements a {
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display:block;
+}
+
+nav.navigation-sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #F4E9DC;
+    border-bottom: solid rgba(228, 219, 207, 90);
+}
+
+a.nav-link{
+    font-family: YACgEWqX9J4-0, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #304254;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div.content{
+    background-color: #F4E9DC;
+}
+@media (orientation: landscape) {
+    div#nameAndMotto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 900px;
+        background-color: #e4dbcf;
+    }
+    div#textNameAndPhoto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 150px;
+    }
+
+    div#containerSecondPhoto {
+        display: flex;
+        height: 800px;
+        padding-right: 100px;
+    }
+    div#aboutWork{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        height: 900px;
+    }
+    div#textAboutWork{
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px;
+        padding-right: 100px;
+        max-width: 768px;
+    }
+    div#firstContainerPhotoAboutWork{
+        display: flex;
+        padding-top: 40px;
+        height: 800px;
+        padding-left: 50px;
+    }
+
+    div#aboutMe{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #e4dbcf;
+        height: 900px;
+    }
+
+    div#secondPhotoAboutMe{
+        padding-left: 50px;
+    }
+
+    div#containerPhotosAboutMe{
+        display: flex;
+        flex-direction: row;
+        padding-top: 120px;
+        padding-left: 50px;
+        height: 800px;
+    }
+
+    div#textAboutMe{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 200px;
+        max-width: 768px;
+        padding-right: 100px;
+    }
+
+    div#whyMe{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 900px;
+    }
+
+    div#containerPhotoWhyMe{
+        padding-top: 100px;
+        padding-left: 50px;
+        max-width: 300px;
+    }
+
+    div#textWhyMe{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-top: 50px;
+        padding-right: 150px;
+    }
+
+    div#questions{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #e4dbcf;
+        height: 900px;
+    }
+
+    div#textQuestions{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        max-width: 568px;
+        padding-left: 100px;
+    }
+
+    div#containerPhotosQuestions{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    div#firstPhotoQuestions{
+        padding-top: 100px;
+        padding-right: 10px;
+    }
+
+    #secondPhotoQuestions{
+        padding-right: 50px;
+        padding-top: 100px;
+    }
+
+    div#whatInService{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 900px;
+    }
+
+    div#containerPhotosWhatInService{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    div#firstPhotoWhatInService{
+        padding-top: 200px;
+        padding-left: 50px;
+    }
+
+    div#secondPhotoWhatInService{
+        padding-top: 200px;
+        padding-left: 10px;
+    }
+
+    div#textWhatInService{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 250px;
+        padding-right: 50px;
+    }
+    html.dark, .dark body{
+        nav.navigation-sticky{
+            background-color: #3B3B3B;
+            border-bottom: solid #383838;
+        }
+    
+        a.nav-link{
+            color: #F4E9DC;
+            background-color: #3B3B3B;
+        }
+        
+        .dropButton{
+            color: #F4E9DC;
+            background-color: #3B3B3B;
+        }
+
+        #nameAndMotto, 
+        #aboutWork,
+        #aboutMe,
+        #whyMe,
+        #questions,
+        #whatInService{
+            background-color: #383838;
+        }
+
+        h1{
+            color: #F4E9DC;
+        }
+    
+        p{
+            color: #F4E9DC;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .dropButton {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .dropElements a {
+        padding: 10px;
+    }
+
+    div#nameAndMotto,
+    div#aboutWork,
+    div#aboutMe,
+    div#whyMe,
+    div#questions,
+    div#whatInService {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    div#textNameAndPhoto,
+    div#textAboutWork,
+    div#textAboutMe,
+    div#textWhyMe,
+    div#textQuestions,
+    div#textWhatInService {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    div#containerSecondPhoto,
+    div#firstContainerPhotoAboutWork,
+    div#secondContainerPhotoAboutWork,
+    div#containerPhotosAboutMe,
+    div#containerPhotoWhyMe,
+    div#containerPhotosQuestions,
+    div#containerPhotosWhatInService {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    div#name,
+    div#surname,
+    div#motto,
+    div#headerAboutWork,
+    div#headerAboutMe,
+    div#headerWhyMe,
+    div#headerQuestions {
+        padding: 10px 0;
+    }
+
+    div#imageNameAndMotto,
+    div#firstPhotoAboutMe,
+    div#secondPhotoAboutMe,
+    div#firstPhotoQuestions,
+    div#secondPhotoQuestions,
+    div#firstPhotoWhatInService,
+    div#secondPhotoWhatInService {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    nav.navigation-sticky ul.nav {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav.navigation-sticky .nav-item {
+        text-align: center;
+    }
+    html.dark, .dark body{
+        .content{
+            background-color: #3B3B3B;
+        }   
+    
+        h1{
+            color: #F4E9DC;
+        }
+    
+        p{
+            color: #F4E9DC;
+        }
+    
+        nav.navigation-sticky{
+            background-color: #3B3B3B;
+            border-bottom: solid #383838;
+        }
+    
+        a.nav-link{
+            color: #F4E9DC;
+            background-color: #3B3B3B;
+        }
+        .dropButton{
+            color: #F4E9DC;
+            background-color: #3B3B3B;
+        }
+        
+    }
+    
+}
