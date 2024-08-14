@@ -1,4 +1,4 @@
-document.querySelector('.themetoggle').addEventListener('click', (event) => {
+document.querySelector('.themetoggleMobile').addEventListener('click', (event) => {
     event.preventDefault();
     if (localStorage.getItem('theme') === 'dark') {
       localStorage.removeItem('theme');
@@ -6,25 +6,21 @@ document.querySelector('.themetoggle').addEventListener('click', (event) => {
     else {
       localStorage.setItem('theme', 'dark')
     }
-    addDarkClassToHTML()
     addDarkClassToHTMLMobile()
   });
   
-  function addDarkClassToHTML() {
+
+function addDarkClassToHTMLMobile() {
     try {
       if (localStorage.getItem('theme') === 'dark') {
         document.querySelector('html').classList.add('dark');
-        document.querySelector('.themetoggle span').textContent = 'dark_mode';
+        document.querySelector('.themetoggleMobile span').textContent = 'dark_mode';
       }
       else {
         document.querySelector('html').classList.remove('dark');
-        document.querySelector('.themetoggle span').textContent = 'wb_sunny';
+        document.querySelector('.themetoggleMobile span').textContent = 'wb_sunny';
       }
     } catch (err) { }
-  }
+}
 
-
-  
-  addDarkClassToHTML();
-  
-  addDarkClassToHTMLMobile();
+addDarkClassToHTMLMobile();

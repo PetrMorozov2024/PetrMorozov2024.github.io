@@ -34,6 +34,40 @@
             </li>   
         </ul>
     </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Домашняя</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="htmlPages/contact.html">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropDownMenu">
+                        <button id="dropButtonMobile" class="dropButton">Примеры работ</button>
+                        <div class="dropElementsMobile" id="dropDownMobile">
+                            <a class="nav-link" href="htmlPages/inCity.html">Городская фотосессия</a>
+                            <a class="nav-link" href="htmlPages/inTheStudio.html">Фотосессия в студии</a>
+                            <a class="nav-link" href="htmlPages/loveStory.html">Love story</a>
+                            <a class="nav-link" href="htmlPages/streetStyle.html">Street style</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="themetoggleMobile nav-link">
+                        <span class="material-icons">wb_sunny</span></a>  
+                </li>   
+            </ul>
+        </div>
+    </div>
+      <nav class="navbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
     <div class="content">
         <div id="nameAndMotto">
             <div id="textNameAndPhoto">
@@ -161,5 +195,14 @@
     </div>
     <script src="js/switch.js"></script>
     <script src="js/dropDownMenu.js"></script>
+    <script src="js/animation.js"></script>
+    <script src=
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+                integrity=
+    "sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+                crossorigin="anonymous">
+        </script>
+        <script src="js/dropDownMenuMobile.js"></script>
+        <script src="js/switchMobile.js"></script>
 </body>
 </html>

@@ -18,6 +18,8 @@ p.bolderText{
     font-weight: bolder;
 }
 
+
+
 .dropDownMenu{
     position: relative;
     display: inline-block;
@@ -53,18 +55,48 @@ p.bolderText{
     text-decoration: none;
     display: block;
 }
+.dropButtonMobile{
+    font-family: YACgEWqX9J4-0, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #304254;
+    background-color: #f4e9dc;
+    overflow: hidden;
+    border: none;
+    text-overflow: ellipsis;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.dropElementsMobile {
+    display: none;
+    position: absolute;
+    background-color: #e4dbcf;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
 
 .show {
     display:block;
 }
 
-nav.navigation-sticky{
+
+
+.showMobile{
+    display: block;
+}
+
+.navigation-sticky{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-color: #F4E9DC;
     border-bottom: solid rgba(228, 219, 207, 90);
 }
+
 
 a.nav-link{
     font-family: YACgEWqX9J4-0, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -79,6 +111,15 @@ div.content{
     background-color: #F4E9DC;
 }
 @media (orientation: landscape) {
+    .navbar{
+        display: none;
+        background-color: #F4E9DC;
+    }
+
+    .collapse{
+        display: none;
+    }
+
     div#nameAndMotto {
         display: flex;
         flex-direction: row;
@@ -272,12 +313,18 @@ div.content{
 }
 
 @media (max-width: 768px) {
+    .navigation-sticky{
+        display: none;
+    }
     h1 {
         font-size: 36px;
+        font-family: 'Old Standart';
+        font-weight: normal;
     }
 
     p {
         font-size: 18px;
+        font-family: 'Old Standart';
     }
 
     .dropButton {
@@ -318,9 +365,9 @@ div.content{
     div#containerPhotoWhyMe,
     div#containerPhotosQuestions,
     div#containerPhotosWhatInService {
-        width: 100%;
+        width: 50%;
         height: auto;
-        padding: 10px 0;
+        padding: 0px;
     }
 
     div#name,
@@ -342,7 +389,14 @@ div.content{
     div#secondPhotoWhatInService {
         width: 100%;
         height: auto;
-        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+
+    #containerSecondPhoto,
+    #firstContainerPhotoAboutWork,
+    #containerPhotoWhyMe{
+        width: 360px;
+        height: 240px;
     }
 
     nav.navigation-sticky ul.nav {
@@ -366,17 +420,20 @@ div.content{
             color: #F4E9DC;
         }
     
-        nav.navigation-sticky{
-            background-color: #3B3B3B;
-            border-bottom: solid #383838;
-        }
-    
         a.nav-link{
             color: #F4E9DC;
             background-color: #3B3B3B;
         }
         .dropButton{
             color: #F4E9DC;
+            background-color: #3B3B3B;
+        }
+
+        .navbar{
+            display: block;
+            background-color: #3B3B3B;
+        }
+        #navbarToggleExternalContent{
             background-color: #3B3B3B;
         }
         

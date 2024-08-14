@@ -6,8 +6,6 @@
   function dropMenu() {
       document.getElementById("dropDown").classList.toggle("show");
   }
-
-
   window.onclick = function(event) {
     if (!event.target.matches('.dropButton')) {
 
